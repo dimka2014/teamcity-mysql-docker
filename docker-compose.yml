@@ -7,4 +7,10 @@ services:
             - ./logs:/opt/teamcity/logs
         ports:
             - 8111:8111
-    
+    mysql:
+        image: mysql:5.7
+        volumes:
+            - ./db:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=1111
+            - MYSQL_DATABASE=teamcity
