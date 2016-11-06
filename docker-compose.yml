@@ -1,0 +1,10 @@
+version: '2'
+services:
+    teamcity:
+        image: jetbrains/teamcity-server
+        volumes:
+            - ./data:/data/teamcity_server/datadir
+            - ./logs:/opt/teamcity/logs
+        ports:
+            - 8111:8111
+    
