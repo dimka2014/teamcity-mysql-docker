@@ -5,6 +5,13 @@ services:
         volumes:
             - ./data:/data/teamcity_server/datadir
             - ./logs:/opt/teamcity/logs
+    agent:
+        image: jetbrains/teamcity-agent
+        volumes:
+            - ./agent_config:/data/teamcity_agent/conf
+        environment:
+            - DOCKER_IN_DOCKER="start"
+        privileged: true
     mysql:
         image: mysql:5.7
         volumes:

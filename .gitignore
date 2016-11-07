@@ -1,6 +1,7 @@
 data/config/*
 data/system/*
 data/plugins/.unpacked
+agent_config/*
 logs/*
 db/*
 !.gitkeep
