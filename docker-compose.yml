@@ -9,6 +9,7 @@ services:
         image: mysql:5.7
         volumes:
             - ./db:/var/lib/mysql
+            - ./mysqlconfig:/etc/mysql/conf.d
         environment:
             - MYSQL_ROOT_PASSWORD=1111
             - MYSQL_DATABASE=teamcity
