@@ -1,6 +1,0 @@
-[mysqld]
-innodb_buffer_pool_size=2000M
-innodb_log_file_size=1024M
-innodb_file_per_table=true
-innodb_flush_log_at_trx_commit=2
-binlog-format=mixed
