@@ -1,3 +1,6 @@
+data/config/*
+data/system/*
+data/plugins/.unpacked
 logs/*
 db/*
 !.gitkeep
